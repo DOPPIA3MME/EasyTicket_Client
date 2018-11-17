@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RadioButton
+        android:id="@+id/radioButtonFiera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="190dp"
+        android:textSize="22dp"
+        android:text="Fiera"
+        tools:text="Fiera" />
+
+    <RadioButton
+        android:id="@+id/radioButtonTeatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="310dp"
+        android:text="Teatro"
+        android:textSize="22dp"
+        tools:text="Teatro" />
+
+    <RadioButton
+        android:id="@+id/radioButtonConcerto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:textSize="22dp"
+        android:text="Concerto"
+        tools:text="Concerto" />
+
+    <RadioButton
+        android:id="@+id/radioButtonSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp"
+        android:text="Sport"
+        android:textSize="22dp"
+        tools:text="Sport" />
+
+    <RadioButton
+        android:id="@+id/radioButtonCinema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:textSize="22dp"
+        android:text="Cinema"
+        tools:text="Cinema" />
+
+    <TextView
+        android:id="@+id/selezionaTipologia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Seleziona tipologia"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorText">
+
+        <TextView
+            android:id="@+id/txtOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:text="OK"
+            android:textColor="@color/colorPrimary" />
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/selezionaOrdine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Seleziona ordine"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <RadioButton
+
+        android:id="@+id/radioButtonAlfabetico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:textSize="22dp"
+        android:text="Nome"
+        tools:text="Nome" />
+
+    <RadioButton
+        android:id="@+id/radioButtonPrezzo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="190dp"
+        android:textSize="22dp"
+        android:text="Prezzo"
+        tools:text="Prezzo" />
+
+    <RadioButton
+        android:id="@+id/radioButtonData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:textSize="22dp"
+        android:text="Data"
+        tools:text="Data" />
+
+
+</RelativeLayout>

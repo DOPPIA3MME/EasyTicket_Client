@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.amazonaws.rds.eu_central_1.cxjgpctcq5m4.dbingsoftware.appminieri">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--
+       application rappresenta TUTTA l'applicazione, quindi tutte le activity avranno le icone, la label, il theme che metto in application
+       android:icon="@mipmap/... rappresenta l'icona di avvio dell'app
+       android:label="..." rappresenta la stringa sulla barra superiore nelle schermate
+       android:theme="@style/..." rappresenta il tema della schermata, Theme.AppCompat è lo stile dark, inveceApp.Compat.Light bianco
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="EasyTicket"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"
+            android:theme="@style/NoActionBar">
+            <tools:validation testUrl="http://ingsoftw.eu-central-1.elasticbeanstalk.com" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ingsoftw.eu-central-1.elasticbeanstalk.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            tools:replace="android:value"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <!-- Se l'errore che ti da è The activity must be exported or contain an intent-filter devi mettere android:exported="true" -->
+
+        <activity
+            android:name=".Fase1.Accesso"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- Profilo -->
+        <activity
+            android:name=".Profilo"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="Profilo"
+            android:screenOrientation="portrait" />
+
+
+        <!-- launchMode standard: IMPORTANTE PER I GETEVENTS-->
+        <!-- CarrelloMain -->
+        <activity
+            android:name=".CarrelloMainActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="CarrelloMain"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+
+        <!-- Acquisti -->
+
+        <!-- QRCODE -->
+        <activity
+            android:name=".QRCODE"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="QRCODE"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+
+        <!-- Impostazioni -->
+        <activity
+            android:name=".Impostazioni"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="Impostazioni"
+            android:screenOrientation="portrait" />
+
+        <!-- Info -->
+        <activity
+            android:name=".Info"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="Info"
+            android:screenOrientation="portrait" />
+
+        <!-- Registrazione -->
+        <activity
+            android:name=".Fase1.Registrazione"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- Conferma tramite mail -->
+        <activity
+            android:name=".ConfermaTramiteMail"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- Info evento -->
+        <activity
+            android:name=".InfoEvento"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+
+        <!-- Acquisti user -->
+
+        <!-- ModificaPassword -->
+        <activity
+            android:name=".ModificaPassword"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- Pagamento -->
+        <activity
+            android:name=".Pagamento"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <!-- Cerca Evento -->
+        <activity android:name=".CercaEvento"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"/>
+    </application>
+
+</manifest>

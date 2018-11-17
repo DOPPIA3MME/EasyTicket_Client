@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+   >
+
+
+
+
+
+    <ImageView
+        android:id="@+id/image_carrello"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/nome_carrello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:textColor="#000000"
+        android:text="nome"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tipologia_carrello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1800"
+        android:text="concerto"
+        android:textStyle="bold"
+        android:layout_marginLeft="170dp"
+        android:layout_below="@+id/nome_carrello"
+        />
+
+    <TextView
+        android:id="@+id/data_carrello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1b87df"
+        android:text="data"
+        android:textStyle="bold"
+        android:layout_marginLeft="170dp"
+        android:layout_below="@id/localita_carrello"
+        />
+
+    <TextView
+        android:id="@+id/costo_carrello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#17de6d"
+        android:text="costo"
+        android:textStyle="bold"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/tipologia_carrello"
+        />
+
+    <TextView
+        android:id="@+id/localita_carrello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#097053"
+        android:textStyle="bold"
+        android:text="città"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/nome_carrello"
+        />
+
+      <ImageView
+          android:id="@+id/buttonCompra"
+          android:layout_width="75dp"
+          android:layout_height="30dp"
+          android:layout_alignLeft="@+id/data_carrello"
+          android:layout_marginLeft="80dp"
+          android:background="@color/colorPrimary"
+          android:clickable="true"
+          android:layout_gravity="center"
+          />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/data_carrello"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="6dp"
+        android:textColor="#ffff"
+        android:text="COMPRA"
+        android:layout_gravity="center"
+        android:lines="1"
+        />
+
+    <ImageView
+        android:id="@+id/remove_carrello"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+         android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/data_carrello"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/buttonCompra"
+        android:background="#ed1212"
+        android:clickable="true"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/data_carrello"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/buttonCompra"
+        android:textColor="#ffff"
+        android:text="ELIMINA"
+        android:layout_gravity="center"
+        android:lines="1"
+        />
+
+</RelativeLayout>
